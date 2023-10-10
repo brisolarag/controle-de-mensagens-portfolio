@@ -1,0 +1,61 @@
+.navbar-wrapper {
+    position: relative;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+
+    align-items: center;
+    background-color: black;
+    color: azure;
+
+    gap: 10px;
+
+
+    width: 100%;
+    font-size: .6rem;
+    padding: 10px 5px;
+}
+
+.navbar-component {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-component input, .navbar-component select {
+    box-sizing: border-box;
+    width: 400px;
+}
+
+.navbar-name h3 {
+    text-align: center;
+}
+
+.navbar-button button {
+    width: 300px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .navbar-wrapper {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .navbar-name h3 {
+        margin: 2px;
+    }
+
+    .navbar-button {
+        margin-top: 5px;
+    }
+  }
+
+
